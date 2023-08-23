@@ -1,6 +1,11 @@
 #!/bin/bash
 # Basic Backup Script 
+# Usage: 
+# set crontab to:
+# 0 0,12 * * * bash /backup/backup_www_pg.sh
 #------------------------------------------------------
+
+# configurar cron para 
 
 find /backup/data/ -type f -mtime +2 -delete
 
